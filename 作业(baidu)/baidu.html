@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	#head
+	{padding-bottom: 100px;
+		text-align: center;}
+	#daohang
+	{
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px;
+    padding: 0 96px 0 0;
+	}
+	#daohang a.nmav
+	{
+	float: left;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+    }
+    #daohang a.nmav:hover
+    {
+    	color: #00c;
+    	cursor: pointer;
+    }
+    #daohang a.bri
+    {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: #fff;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+    }
+    #daohang a.bri:hover
+    {
+    	background:white;
+    	border-bottom: 0;
+    	color:black;
+    }
+    #daohang a.nmav:hover
+    {
+    	cursor: pointer;
+    }
+	#logo img
+	{
+	border:0; 
+    }
+    #logo
+    {
+    padding-top: 60px; 
+	text-align: center; 
+    }
+    .sousuokuang input
+	{border: 1px solid #b6b6b6;
+    border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 558px;
+    margin-right: 0;
+    border-right-width: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    overflow: hidden;
+    height: 34px;
+    }
+    .bg
+    {
+    width: 100px;
+    height: 38px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border:0;
+    }
+    .bg:hover
+    {
+    	background: #317ef3;
+    	border-bottom: 1px solid #2868c8;
+    	box-shadow: 1px 1px 1px #ccc;
+    	cursor: pointer;
+    }
+    .xiangji
+    {
+    	z-index: 1;
+        position: absolute;
+        height: 16px;
+        width: 18px;
+        margin-top: 11px;
+        right: 34%;
+        background: #fff url(xiangji.png) no-repeat;
+    }
+    .xiangji:hover
+    {
+    	z-index: 1;
+        position: absolute;
+        height: 16px;
+        width: 18px;
+        margin-top: 11px;
+        right: 34%;
+        background: #fff url(xiangji.png) 0 -20px no-repeat;
+        cursor: pointer;
+    }
+    .shoujibaidu
+    {
+    	text-align: center;
+    	position: absolute;
+    	height: 60px;
+    	bottom: 140px;
+    	width: 100%;
+    }
+    .erweima 
+    {
+    	text-align: center;
+    	padding-top: 87px;
+    	height: 60px;
+    	width: 100%;
+    }
+    p{
+    	text-align: center;
+    	color: #666;
+    	line-height: 23px;
+    	margin:3px 0 0 5px;
+    	font-size: 12px;
+    }
+    #zuixia a
+    {
+    	color: #999;
+    }
+    .yihang a
+    {
+    margin-left: 25px;
+    }
+
+    #zuixia p
+    {    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;}
+    .cebianlan
+    {
+    	width: 72px;
+        height: 700px;
+        background-color: white;
+        position: absolute;
+        top: 31px;
+        right: 27px;
+        display: none;
+    }
+    .cebianlan2
+    {
+    	width: 72px;
+        height: 700px;
+        background-color: white;
+        position: absolute;
+        top: 31px;
+        right: 27px;
+        display: block;
+    }
+    #cebianlan ul li{
+    list-style: none;
+    text-align: center;
+    border-bottom: solid 1px #666666;
+    }
+    #cebianlan ul li a{
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+    display: block;
+    }
+	</style>
+	<script>
+	function fn()
+	{
+		document.getElementById('cebianlan').className = "cebianlan2"
+	}
+	function fn2()
+	{
+		document.getElementById('cebianlan').className = "cebianlan"
+	}
+	</script>
+
+</head>
+<body>
+<div id="head">
+	<div id="daohang">
+	<a href="http://news.baidu.com/" class="nmav">新闻</a>
+	<a href="https://www.hao123.com/" class="nmav">hao123</a>
+	<a href="http://map.baidu.com/" class="nmav">地图</a>
+	<a href="http://v.baidu.com/" class="nmav">视频</a>
+	<a href="https://tieba.baidu.com/index.html" class="nmav">贴吧</a>
+	<a href="http://xueshu.baidu.com/" class="nmav">学术</a>
+	<a href="#" class="nmav">登录</a>
+	<a href="#" class="nmav">设置</a>
+	<a href="https://www.baidu.com/more/" class="bri" onmouseover="fn()" onmouseout="fn2()">更多产品</a>
+	</div>
+	<div id = "logo">
+	<img hidefocus="true" src="teacher_pc_8fa12bc0f7f102be0395c901ca11298f.gif" width = "270" height = "129">
+	</div>
+	<form action="">
+	<span class="sousuokuang"><span class="xiangji"></span><input type="text" name="s" value maxlength="255" autocomplete="off"></span><span class="baidu"><input type="submit" id="su" value="百度一下" class="bg"></span>
+	</form>
+</div>
+<div id="shoujibaidu">
+<div class="erweima"><img src="erweima.png" ></div>
+<p><b>手机百度</b></p>
+</div>
+<div id="zuixia">
+<p class="yihang">
+<a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+<a href="http://home.baidu.com/">关于百度</a>
+<a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a>
+<a href="http://e.baidu.com/?refer=888">百度推广</a>
+</p>
+<p class="erhang">
+©2017&nbsp;baidu&nbsp;
+<a href="https://www.baidu.com/duty/">使用百度前必读</a>&nbsp;
+<a href="http://help.baidu.com/">意见反馈</a>&nbsp;
+</p>
+</div>
+<div class="cebianlan" id="cebianlan">
+            <ul>
+                <li><img src="bdbri.png"><a href="#">糯米</a></li>
+                <li><img src="music.png"><a href="#">音乐</a></li>
+                <li><img src="image.png"><a href="#">图片</a></li>
+                <li><img src="zhidao.png"><a href="#">知道</a></li>
+                <li><img src="wenku.png"><a href="#">文库</a></li>
+            </ul>
+        </div>
+</body>
+</html>
